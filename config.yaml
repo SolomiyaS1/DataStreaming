@@ -1,0 +1,2 @@
+bootstrap_servers: ["localhost:9092"]
+file_path : "../Data/all_annotated.tsv"

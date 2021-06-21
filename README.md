@@ -9,6 +9,7 @@
     - FastText model is used to detect a language of input text (https://github.com/facebookresearch/fastText/blob/master/docs/language-identification.md)
     - Input: `raw text`
     - Output: language label (e.g. `en`, `es`)  
+  **Note:** Please download a model https://dl.fbaipublicfiles.com/fasttext/supervised-models/lid.176.bin to the folder `Data`  
 * **Name Entity Recognition**  
     - Spacy models are used to detect entities (https://spacy.io/usage/models)  
     - Input: `raw text`, `detected language`

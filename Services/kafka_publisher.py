@@ -1,5 +1,5 @@
 from kafka import KafkaProducer
-from utils import load_config, create_logger
+from DataStreaming.utils import load_config, create_logger
 import msgpack
 
 logger = create_logger(__name__)

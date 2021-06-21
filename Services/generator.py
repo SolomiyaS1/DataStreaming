@@ -1,5 +1,5 @@
-from Services.kafka_publisher import MessagePublisher
-from Services.source_data_handler import SourceDataHandler
+from kafka_publisher import MessagePublisher
+from source_data_handler import SourceDataHandler
 
 
 if __name__ == "__main__":

@@ -1,6 +1,6 @@
 from kafka import KafkaConsumer
 import msgpack
-from utils import load_config
+from DataStreaming.utils import load_config
 
 
 class MessageReader:

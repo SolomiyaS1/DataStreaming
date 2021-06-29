@@ -4,8 +4,8 @@ import json
 from kafka_reader import MessageReader
 import ast
 
-REST_API_URL_LANG = 'https://api.powerbi.com/beta/8a68f26d-b270-4ef3-ae78-bd695a909445/datasets/007430c5-b02e-480c-a056-63ebcf1ff69c/rows?key=WGt%2Bv%2BdbSdrVQg2ohUi3RhCUzB6qGzcbuxb7JSMIBnnWeROMURB9VS9n80BqN%2BUEb3GinkbCodJIcrZou3JkXA%3D%3D'
-REST_API_URL_SENT = 'https://api.powerbi.com/beta/8a68f26d-b270-4ef3-ae78-bd695a909445/datasets/e1fad58f-12f1-4120-aff8-631570c1105e/rows?key=acr%2Bt%2BgGL3LJ3ZYFmjAGzA0zAYcSYPwFpcXAn5B%2BvHFfv5AhbcbZc2mcHdZe%2BBimua65f5j26etFER4gR%2FXRxQ%3D%3D'
+REST_API_URL_LANG = 'https://api.powerbi.com/beta/12b9a53e-70ad-4438-ace3-a8b16dc98ffc/datasets/0381c85f-face-4c5d-80cb-5141b796b346/rows?key=SU%2FVE0Oj5dSMhjo4calR1xZuYHdlLLhtzcmiy3Uw3q%2BzXlUn18B5s%2FizRhW9MPHnVw6cFYjmadR%2F%2FX31ITmSzw%3D%3D'
+REST_API_URL_SENT = 'https://api.powerbi.com/beta/12b9a53e-70ad-4438-ace3-a8b16dc98ffc/datasets/244f97e4-3c19-476d-b969-f342c378a316/rows?key=EiNQ%2FHDlRaXC2f7EZGx%2BNpAEvqNOO7eevDGcdWuTz8mpyNR7kULHVtpzs36uFtVz58xyNgOkO0T13ZFw%2FwdAsA%3D%3D'
 
 messages_with_language_and_sentiment = MessageReader("messages_with_language_and_sentiment")
 list_of_languages = {}

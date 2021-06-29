@@ -4,7 +4,7 @@ import json
 from kafka_reader import MessageReader
 import ast
 
-REST_API_URL_ENT = 'https://api.powerbi.com/beta/8a68f26d-b270-4ef3-ae78-bd695a909445/datasets/bbdd22c4-25f0-4434-a901-11e0767a7b15/rows?key=qDLGGAVK8ZatXK8OsZxrXiiqb2MJf%2FXay4pbklvJ%2BFxv0nDtcnV5Gb1yyhyvioFpKZZIyM5IoT%2FXhXfJqfvtUQ%3D%3D'
+REST_API_URL_ENT = 'https://api.powerbi.com/beta/12b9a53e-70ad-4438-ace3-a8b16dc98ffc/datasets/47993496-f958-48bb-86bb-fa6bf5810e01/rows?key=%2Fsks6gNVTVI7Buo84WnWzrcW0MUlesakK56A2ZIRNro6op%2Bo33qaoMRMS5tRMKdr%2F7Qtefv45thymbQFiXvZ6Q%3D%3D'
 
 list_of_entities = {"person": 0, "organization": 0, "product": 0, "date": 0}
 messages_with_entities = MessageReader("messages_with_language_and_entities")

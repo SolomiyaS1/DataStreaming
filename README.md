@@ -4,6 +4,19 @@
 
 ## Service details
 
+### Data preparation and kafka communicator services  
+* **source_data_handler**  
+    - Input: .tsv file  
+    - Ouput: messages one by one
+* **kafka_publisher**      
+    - Input: message, topic
+    - Output: 1 - if message was published. 0 -- if message was empty and it wasn't published
+* **generator**
+    - calls source_data_handler to get next message and publish it with kafka_publisher      
+* **kafka_reader**
+    - Input: topic
+    - Output: messages from the topic 
+
 ### NLP modules  
 * **Language detection**  
     - FastText model is used to detect a language of input text (https://github.com/facebookresearch/fastText/blob/master/docs/language-identification.md)

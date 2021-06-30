@@ -1,5 +1,6 @@
 from kafka_publisher import MessagePublisher
 from source_data_handler import SourceDataHandler
+import time
 
 
 if __name__ == "__main__":
@@ -11,3 +12,4 @@ if __name__ == "__main__":
 
     while messages_present:
         messages_present = data_publisher.publish_results(data.get_next_message())
+        time.sleep(1)

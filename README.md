@@ -1,6 +1,9 @@
 # Data streaming project
 
-## Team
+## Team  
+* Solomiya Synytsia  
+* Bohdan Yarychevskyi   
+* Khrystyna Hranishak  
 
 ## Service details
 

@@ -28,8 +28,11 @@ if __name__ == '__main__':
         if detected_language == 'en':
             detected_sentiment = detect_sentiment(input_text)
         else:
-            text_translated = translator.translate2english(input_text, detected_language)
-            detected_sentiment = detect_sentiment(text_translated)
+            try:
+                text_translated = translator.translate2english(input_text, detected_language)
+                detected_sentiment = detect_sentiment(text_translated)
+            except KeyError:
+                detected_sentiment = {}
         message["text"] = input_text
         message["language"] = detected_language
         message['sentiment'] = detected_sentiment

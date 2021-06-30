@@ -1,6 +1,6 @@
 from kafka import KafkaConsumer
 import msgpack
-from utils import load_config
+from DataStreaming.utils import load_config
 
 
 class MessageReader:
@@ -8,7 +8,7 @@ class MessageReader:
         config = load_config()
         bootstrap_servers = config["bootstrap_servers"]
         self.topic = topic
-        self._kafka_consumer = KafkaConsumer(bootstrap_servers=bootstrap_servers, value_deserializer=msgpack.unpackb)
+        self._kafka_consumer = KafkaConsumer(bootstrap_servers=bootstrap_servers, auto_offset_reset='earliest', value_deserializer=msgpack.unpackb)
 
     def get_twits(self):
         self._kafka_consumer.subscribe(topics=self.topic)

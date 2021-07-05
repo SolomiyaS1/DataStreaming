@@ -5,6 +5,17 @@
 * Bohdan Yarychevskyi   
 * Khrystyna Hranishak  
 
+## How to run  
+#### Requirements  
+* Linux OS
+* Python3.6  
+
+#### Steps
+* Start Kafka service by executing `docker-compose up`  
+* Create an environment and install all dependencies (`pip install -r requirements.txt`)
+* Execute `./run_app.sh`  
+* See the visualization here https://app.powerbi.com/groups/me/dashboards/4ba98332-4a17-466b-b29c-fb17a80bc45d (please ask the access credentials in private)
+
 ## Service details
 
 ### Data preparation and kafka communicator services  

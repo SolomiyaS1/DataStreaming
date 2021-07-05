@@ -1,5 +1,13 @@
+import os
+import inspect
+import sys
+
+currentdir = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))
+parentdir = os.path.dirname(currentdir)
+sys.path.insert(0, parentdir)
+
 from kafka import KafkaProducer
-from DataStreaming.utils import load_config, create_logger
+from utils import load_config, create_logger
 import msgpack
 
 logger = create_logger(__name__)

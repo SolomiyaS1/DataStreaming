@@ -1,6 +1,14 @@
+import os
+import inspect
+import sys
+
+currentdir = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))
+parentdir = os.path.dirname(currentdir)
+sys.path.insert(0, parentdir)
+
 from kafka import KafkaConsumer
 import msgpack
-from DataStreaming.utils import load_config
+from utils import load_config
 
 
 class MessageReader:
